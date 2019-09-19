@@ -14,7 +14,7 @@ void main() {
 
 	int num;
 
-	cout << "9번. 배열의 크기를 입력하세요 : ";
+	cout << "배열의 크기를 입력하세요 : ";
 	cin >> num;
 
 	int* A = new int[num];
