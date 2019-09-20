@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	//단어의 개수
+	int num = 0, l;
+	string s;
+
+	cout << "9번. 문자열을 입력하세요 : ";
+	getline(cin, s);
+
+	l = s.length();
+
+	char* q = new char[l];
+
+	for (int i = 0; i < l; i++) {
+		q[i] = s[i];
+
+		if (s[i] == 32) {
+			num++;
+		}
+	}
+
+	cout << "단어의 개수 : "<< num+1 << "개" << endl;
+	
+
+	return 0;
+}
