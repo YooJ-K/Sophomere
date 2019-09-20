@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+	//알파벳 글자의 개수, 숫자의 개수,공백 문자의 개수
+	int aNum = 0, sNum = 0, nNum = 0, l;
+	string s;
+
+	cout << "8번. 문자열을 입력하세요 (특수 문자는 입력이 불가능 합니다.) : ";
+	getline(cin,s);
+
+	l = s.length();
+
+	char* q = new char[l];
+
+	for (int i = 0; i < l; i++) {
+		q[i] = s[i];
+
+		if (q[i] >= 65 && q[i] <= 122)
+		{
+			aNum++;
+			cout << q[i] << " aNum" << endl;
+		}
+
+		if (q[i] == 32) {
+			nNum++;
+			cout << q[i] << " nNum" << endl;
+		}
+
+		if (q[i] >= 48 && q[i] <= 57) {
+			sNum++;
+			cout << q[i] << " sNum" << endl;
+		}
+	}
+
+	if (l != sNum + aNum + nNum) {
+		cout << "특수 문자는 입력이 불가능 합니다." << endl;
+	}
+	else {
+		cout << "alphabet : "<< aNum << endl << "number : " << sNum << endl << "space : " << nNum << endl;
+	}
+
+	return 0;
+
+}
