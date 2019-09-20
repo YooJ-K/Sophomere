@@ -21,17 +21,14 @@ int main() {
 		if (q[i] >= 65 && q[i] <= 122)
 		{
 			aNum++;
-			cout << q[i] << " aNum" << endl;
 		}
 
 		if (q[i] == 32) {
 			nNum++;
-			cout << q[i] << " nNum" << endl;
 		}
 
 		if (q[i] >= 48 && q[i] <= 57) {
 			sNum++;
-			cout << q[i] << " sNum" << endl;
 		}
 	}
 
