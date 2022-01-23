@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+void main() {
+
+	int num;
+	float *arr, average = 0, sum = 0;
+
+	cout << "몇 개의 수를 입력하겠습니까? ";
+	cin >> num;
+
+	arr = new float[num];
+
+	for (int i = 0; i < num; i++) {
+		cin >> arr[i];
+		average += arr[i];
+	}
+
+	average /= (float)num;
+
+	for (int i = 0; i < num; i++) {
+		sum += (arr[i] - average)*(arr[i] - average);
+	}
+
+	sum /= (float)num;
+
+	cout << "평균은 " << average << " 표준편차는 " << sum << endl;
+
+	delete[] arr;
+
+	return;
+}
