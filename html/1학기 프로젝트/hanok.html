@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="author" content="김유진">
+  <title>SF투어</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="script2.js"></script>
+  <script src="script.js"></script>
+  <style media="screen">
+    .footer {
+      background-color: #d4d4d4;
+      color: white;
+      text-align: center;
+    }
+
+
+    ul.mylist {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+      max-width: 900px;
+      width: 100%;
+    }
+
+    ul.mylist li {
+      display: inline-block;
+      padding: 10px;
+      margin-bottom: 5px;
+      border: 1px solid #efefef;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    ul.mylist li:hover {
+      background-color: #d4d4d4;
+      color: white;
+    }
+  </style>
+
+  <script>
+    var count1 = 0;
+    var count2 = 0;
+    var count3 = 0;
+    var count4 = 0;
+    var count5 = 0;
+    var count6 = 0;
+    var count7 = 0;
+
+    function open1() {
+      reloadd();
+      count1 = count1 % 2;
+      if (count1 % 2 == 0) {
+        document.getElementById("인사동").style.display = "block";
+      } else {
+        document.getElementById("인사동").style.display = "none";
+      }
+      count1++;
+    }
+
+    function open2() {
+      reloadd();
+      count2 = count2 % 2;
+      if (count2 % 2 == 0) {
+        document.getElementById("광화문").style.display = "block";
+      } else {
+        document.getElementById("광화문").style.display = "none";
+      }
+      count2++;
+    }
+
+    function open3() {
+      reloadd();
+      count3 = count3 % 2;
+      if (count3 % 2 == 0) {
+        document.getElementById("경복궁").style.display = "block";
+      } else {
+        document.getElementById("경복궁").style.display = "none";
+      }
+      count3++;
+    }
+
+    function open4() {
+      reloadd();
+      count4 = count4 % 2;
+      if (count4 % 2 == 0) {
+        document.getElementById("한옥").style.display = "block";
+      } else {
+        document.getElementById("한옥").style.display = "none";
+      }
+      count4++;
+    }
+
+    function open5() {
+      reloadd();
+      count5 = count5 % 2;
+      if (count5 % 2 == 0) {
+        document.getElementById("창덕궁").style.display = "block";
+      } else if (count5 == 1) {
+        document.getElementById("창덕궁").style.display = "none";
+      }
+      count5++;
+    }
+
+    function open6() {
+      reloadd();
+      count6 = count6 % 2;
+
+      if (count6 % 2 == 0) {
+        document.getElementById("창경궁").style.display = "block";
+      } else {
+        document.getElementById("창경궁").style.display = "none";
+      }
+      count6++;
+    }
+
+    function open7() {
+      reloadd();
+      count7 = count7 % 2;
+      if (count7 == 0) {
+        document.getElementById("덕수궁").style.display = "block";
+      } else {
+        document.getElementById("덕수궁").style.display = "none";
+      }
+      count7++;
+    }
+
+    function closee() {
+      var sum = count1 + count2 + count3 + count4 + count5 + count6 + count7;
+      if (sum > 0) document.getElementById("이미지").style.display = "none";
+      else document.getElementById("이미지").style.display = "none";
+    }
+
+    function reloadd() {
+
+
+
+      if (count1 == 1) {
+        document.getElementById("인사동").style.display = "none";
+        count1 = 0;
+      }
+
+      if (count2 == 1) {
+        document.getElementById("광화문").style.display = "none";
+        count2 = 0;
+      }
+
+      if (count3 == 1) {
+        document.getElementById("경복궁").style.display = "none";
+        count3 = 0;
+      }
+
+      if (count4 == 1) {
+        document.getElementById("한옥").style.display = "none";
+        count4 = 0;
+      }
+
+      if (count5 == 1) {
+        document.getElementById("창덕궁").style.display = "none";
+        count5 = 0;
+      }
+
+      if (count6 == 1) {
+        document.getElementById("창경궁").style.display = "none";
+        count6 = 0;
+      }
+
+      if (count7 == 1) {
+        document.getElementById("덕수궁").style.display = "none";
+        count7 = 0;
+      }
+    }
+
+
+  </script>
+
+  <base href="C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 웹프\1학기 프로젝트\" target="_self">
+</head>
+
+<body>
+  <!--로고부분-->
+  <header  style=" text-align: center; margin-left: auto; margin-right: auto;">
+    <a href="main.html" target="_self"  style=" margin-left: auto; margin-right: auto;">
+      <img src="sf.png" width="100px" alt="로고"></a><br><br>
+  </header>
+  <!--menu-->
+  <div id="wrap">
+    <div>
+      <a class="open_bt">
+        <img src="menu.png" alt="" width="50px"></a>
+    </div>
+    <nav class="all_menu">
+      <dl>
+        <dt>테마 여행</dt>
+        <dd><a href="hanok.html" target="_self">쉼표 투어</a></dd>
+        <dd><a href="night.html" target="_self">밤도깨비 투어</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="application.html" target="_self">신청 및 예매</a></dt>
+        <dd><a href="application.html#call" target="_self">전화</a></dd>
+        <dd><a href="application.html#facetoface" target="_self">방문</a></dd>
+        <dd><a href="application.html#web" target="_self">인터넷</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="ticket.html" target="_self">입장권 할인</a></dt>
+        <dd><a href="ticket.html#disney" target="_self">전시회</a></dd>
+        <dd><a href="ticket.html#incheon" target="_self">콘서트</a></dd>
+        <dd><a href="ticket.html#보도지침" target="_self">연극</a></dd>
+        <dd><a href="ticket.html#라면에파송송" target="_self">뮤지컬</a></dd>
+    </nav>
+    <!--all_menu-->
+  </div>
+  <!--wrap end-->
+
+  <nav  style=" text-align: center; margin-left: auto; margin-right: auto;">
+
+    <h2><a href="hanok.html" style="font-size:20px;">쉼표, 투어</a></h2><br>
+    <br>
+    출발 및 도착 : 인사동 10시, 약 8시경<br><br>
+    <div id="parent" style=" text-align: center; margin-left: auto; margin-right: auto;">
+      <ul class="mylist" onclick="closee()" style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <li onclick="open1()">인사동</li> ⇒
+        <li onclick="open2()">광화문광장</li> ⇒
+        <li onclick="open3()">경복궁</li> ⇒
+        <li onclick="open4()">북촌한옥마을</li> ⇒
+        <li onclick="open5()">창덕궁</li> ⇒
+        <li onclick="open6()">창경궁</li> ⇒
+        <li onclick="open7()">덕수궁</li>
+
+        <br>
+        <div id="이미지"><br>
+          <canvas id="canvas1" width="500px" height="548px"></canvas>
+          <script type="text/javascript">
+          var canvas = document.getElementById("canvas1");
+          var context = canvas.getContext("2d");
+
+          var img = new Image();
+          img.onload = function(){
+            context.drawImage(img, 0,0,canvas.width,canvas.height);
+          }
+
+          img.src = "한옥.jpg";
+          </script>
+
+        </div>
+      </ul>
+    </div>
+    <br><br><br>
+
+  </nav>
+
+  <div id="인사동" style="text-align: center; display:none; margin-left: auto; margin-right: auto;">
+
+    <p style="font-size:20px">정이 많은, 인사동</p><br>
+    <img src="인사동.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">인사동은 도심 속에서 낡지만 귀중한 전통의 물건들이 교류되는 소중한 공간이다.<br>
+      인사동에는 큰 대로를 중심으로 사이사이 골목들이 미로처럼 얽혀 있다.<br>
+      이 미로 속에는 화랑, 전통공예점, 고미술점, 전통찻집, 전통음식점, 카페 등이 밀집되어 있다.<br>
+      다수의 가맹점들을 보유한 프랜차이저들의 <span style="background:yellow">한글 간판</span>을 볼 수 있다.<br>
+      인사동의 가게들은 저마다의 독특한 멋으로 젊은이들은 물론 중년층에게까지 매우 인기가 많다.<br><br>
+      <br><b>일정 : 한복 대여 및 쌈지길, 인근 거리 둘러보기</b></p><br><br>
+
+  </div>
+
+  <div id="광화문" style="text-align: center; display:none;">
+    <p style="font-size:20px">광화문광장</p><br>
+    <img src="광화문.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      서울특별시 종로구 광화문에서 세종로사거리와 청계광장으로 이어지는 세종로 중앙에<br>
+      조성된 광장으로 2009년 8월 1일 시민에게 개방되었다.<br><br>
+
+      <b>내년부터 세종대왕 상이 다른 위치로 옮겨진다.</b><br><br>
+      <br></p>
+  </div>
+
+  <div id="경복궁" style="text-align: center; display:none;">
+    <p style="font-size:20px">경복궁</p><br>
+    <img src="gwanghwamun.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      사적 제117호. 도성의 북쪽에 있다고 하여 북궐(北闕)이라고도 불리었다. <br>
+      조선왕조의 건립에 따라 창건되어 초기에 정궁으로 사용되었으나 <br>
+      임진왜란 때 전소된 후 오랫동안 폐허로 남아 있다가 <br>
+      조선 말기 고종 때 중건되어 잠시 궁궐로 이용되었다.<br><br><br>
+
+    </p>
+  </div>
+
+  <div id="한옥" style="text-align: center; display:none;">
+    <p style="font-size:20px">북촌 한옥 마을</p><br>
+    <img src="한옥마을.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      서울특별시 종로구 가회동, 재동, 삼청동 일대의 한옥이 모여 있는 곳.<Br><br><br>
+    </p>
+  </div>
+
+  <div id="창덕궁" style="text-align: center; display:none;">
+    <p style="font-size:20px">창덕궁</p><br>
+    <img src="창덕궁.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      덕궁은 서울시 종로구에 위치한 조선 시대의 궁궐이다. <br>
+      건축과 조경이 잘 조화된 종합 환경디자인 사례이면서 <br>
+      동시에 한국적인 공간 분위기를 읽게 하는 중요한 문화유산이다. <br>
+      건축사에 있어 조선 시대 궁궐의 한 전형을 보여 주며, <br>
+      후원의 조경은 우리나라의 대표적인 왕실 정원으로서 가치가 높다.<br>
+    </p>
+  </div>
+
+  <div id="창경궁" style="text-align: center; display:none;">
+    <p style="font-size:20px">창경궁</p><br>
+    <img src="창경궁.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      창경궁(昌慶宮)의 처음 이름은 수강궁(壽康宮)으로, <br>
+      1418년 왕위에 오른 세종이 생존한 상왕인 태종을 모시기 위해 지은 궁이었다. <br>
+      궁궐로서 독립적인 규모를 갖추기는 했으나 <br>
+      당시에 왕이 기거하면서 정사를 보는 궁궐로는 거의 쓰이지 않았다.<br><br><br>
+    </p>
+  </div>
+
+  <div id="덕수궁" style="text-align: center; display:none;">
+    <p style="font-size:20px">덕수궁</p><br>
+    <img src="덕수궁.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      덕수궁은 조선시대 궁궐로, 처음 월산대군의 집터였던 것을 임진왜란 이후 선조의 임시거처로 사용되어<br>
+      정릉동 행궁으로 불리다가 광해군 때에 경운궁으로 개칭되었다. <br>
+      이후 1907년 순종에게 양위한 고종이 이곳에 머무르게 되면서 <br>
+      고종의 장수를 빈다는 의미에서 덕수궁(德壽宮)이라 다시 바꾸었다.<br><br><br>
+    </p>
+  </div>
+
+
+
+  <footer class="footer">
+    <center><br>
+      ⓒ XXXXXXXX Tel. 02 - 1234 - 5678<br>
+      서울특별시 서초구 서초동 강남대로 429 9층 SFtour<br><br>
+    </center>
+  </footer>
+</body>
+
+</html>

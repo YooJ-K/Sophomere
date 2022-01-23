@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "변형된 원형 연결 리스트", "변형된 원형 연결 리스트\변형된 원형 연결 리스트.vcxproj", "{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Debug|x64.ActiveCfg = Debug|x64
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Debug|x64.Build.0 = Debug|x64
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Debug|x86.Build.0 = Debug|Win32
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Release|x64.ActiveCfg = Release|x64
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Release|x64.Build.0 = Release|x64
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Release|x86.ActiveCfg = Release|Win32
+		{475E52CB-1112-4DD3-BD0B-37865CDFD0CC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C36BA074-BFEF-4A3B-A3F0-5874CF0DCB22}
+	EndGlobalSection
+EndGlobal

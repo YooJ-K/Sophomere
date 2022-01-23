@@ -1,0 +1,100 @@
+<!doctype html>
+
+<!--2장 HTML5 문서 만들기-->
+<!--html5 문서임을 알리는 지시어로서 반드시 첫 줄에 나와야 한다.-->
+
+<head>
+
+<!--주석문-->
+<!--head란? 문서의 제목, 본문을 설명하는 메타 태그들, 자바스크립트코드와 CSS스타일 시트 등을 포함하며 문서의 본문은 포함되지 않는다.-->
+
+<title>연습용입니다</title>
+
+</head>
+
+<!--헤드와 바디 사이에는 아무것도 들어갈 수 없다-->
+
+<body> 
+
+<!--문서의 본문, 자바스크립트 코드 포함 가능-->
+
+<a href = "#chap1">내가 사는 이유로 가기</a>
+
+<!--ol ul dl의 차이점을 알아보자-->
+
+<ol type="1">
+	<li>아이템</li>
+	<li>item</li>
+</ol>
+
+<hr>
+
+<ol>
+	<li type="1">Ice and Fire</li>
+	<li type="A">Complete</li>
+	<!--li type 어쩌고 쓰는거는 ol타입에서만 유효하다.-->
+</ol>
+
+<hr>
+
+<ul>
+	<li>수업을</li>
+	<li>듣기가 싫습니다..</li>
+	<li>자퇴시켜주세요</li>
+</ul>
+
+<hr>
+
+<dl>
+	<dt><h3>ON/OFF</h3></dt>
+	<dd>데뷔 곡명</dd>
+</dl>
+
+<hr>
+
+<!--중첩 리스트 만들기-->
+
+<h3 id="chap1">내가 사는 이유</h3>
+<hr><!--li는 끝내는거 안써도 된당-->
+<ul>
+	<li>내가 좋아하는 음식이 많아요
+		<ul>
+			<li>감자탕
+			<li>스파게티
+			<li>올레국수
+		</ul>
+	<li>라면 먹기 좋아해요
+		<ol type = "A">
+			<li>물을 끓인다.
+			<li>라면과 스프를 넣는다
+		</ol>
+	<li>여름에는 집으로
+	<li>겨울에도 집으로
+</ul>
+
+<hr>
+
+<table border="2">
+	<caption><h3>학생들의 인적사항</h3></caption>
+	<thead>
+		<tr><th>이름</th><th>나이</th><th>사는 곳</th></tr>
+	</thead>
+	<tbody> 
+		<tr><td>김유진</td><td>21</td><td>부산</td></tr>
+		<tr><td>전승기</td><td>21</td><td>창원</td></tr>
+	</tbody>
+	<tfoot>
+		<tr><th>합계</th><th>42</th><th>흠</th></tr>
+	</tfoot>
+	
+</table>
+
+<a href = "http://naver.com" target = "_self">온</a>
+<a href = "http://naver.com" target = "_parent">앤</a>
+<a href = "http://naver.com" target = "_top">오</a>
+<a href = "http://naver.com" target = "_blank">프</a>
+
+
+</body>
+
+</html>

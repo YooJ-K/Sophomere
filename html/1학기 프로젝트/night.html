@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta name="author" content="김유진">
+  <title>SF투어</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="script2.js"></script>
+  <script src="script.js"></script>
+  <style media="screen">
+    .footer {
+      background-color: #d4d4d4;
+      color: white;
+      text-align: center;
+    }
+
+
+    ul.mylist {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+      max-width: 900px;
+      width: 100%;
+    }
+
+    ul.mylist li {
+      display: inline-block;
+      padding: 10px;
+      margin-bottom: 5px;
+      border: 1px solid #efefef;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    ul.mylist li:hover {
+      background-color: #d4d4d4;
+      color: white;
+    }
+  </style>
+
+  <script>
+    var count1 = 0;
+    var count2 = 0;
+    var count3 = 0;
+    var count4 = 0;
+    var q = 0;
+
+    function open1() {
+      reloadd();
+      count1 = count1 % 2;
+      if (count1 % 2 == 0) {
+        document.getElementById("롯데월드타워").style.display = "block";
+      } else {
+        document.getElementById("롯데월드타워").style.display = "none";
+      }
+      count1++;
+    }
+
+    function open2() {
+      reloadd();
+      count2 = count2 % 2;
+      if (count2 % 2 == 0) {
+        document.getElementById("N서울타워").style.display = "block";
+      } else {
+        document.getElementById("N서울타워").style.display = "none";
+      }
+      count2++;
+    }
+
+    function open3() {
+      reloadd();
+      count3 = count3 % 2;
+      if (count3 % 2 == 0) {
+        document.getElementById("63빌딩").style.display = "block";
+      } else {
+        document.getElementById("63빌딩").style.display = "none";
+      }
+      count3++;
+    }
+
+    function open4() {
+      reloadd();
+      count4 = count4 % 2;
+      if (count4 % 2 == 0) {
+        document.getElementById("야시장").style.display = "block";
+      } else {
+        document.getElementById("야시장").style.display = "none";
+      }
+      count4++;
+    }
+
+
+    function closee() {
+      var sum = count1 + count2 + count3 + count4;
+      if (sum > 0) document.getElementById("이미지").style.display = "none";
+      else document.getElementById("이미지").style.display = "none";
+    }
+
+    function reloadd() {
+
+
+
+      if (count1 == 1) {
+        document.getElementById("롯데월드타워").style.display = "none";
+        count1 = 0;
+      }
+
+      if (count2 == 1) {
+        document.getElementById("N서울타워").style.display = "none";
+        count2 = 0;
+      }
+
+      if (count3 == 1) {
+        document.getElementById("63빌딩").style.display = "none";
+        count3 = 0;
+      }
+
+      if (count4 == 1) {
+        document.getElementById("야시장").style.display = "none";
+        count4 = 0;
+      }
+
+    }
+  </script>
+
+  <base href="C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 웹프\1학기 프로젝트\" target="_self">
+</head>
+
+<body>
+  <!--로고부분-->
+  <header   style=" text-align: center; margin-left: auto; margin-right: auto;">
+    <a href="main.html" target="_self"><center>
+      <img src="sf.png" width="100px" alt="로고"></center></a><br><br>
+  </header>
+  <!--menu-->
+  <div id="wrap">
+    <div>
+      <a class="open_bt">
+        <img src="menu.png" alt="" width="50px"></a>
+    </div>
+    <nav class="all_menu">
+      <dl>
+        <dt>테마 여행</dt>
+        <dd><a href="hanok.html" target="_self">쉼표 투어</a></dd>
+        <dd><a href="night.html" target="_self">밤도깨비 투어</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="application.html" target="_self">신청 및 예매</a></dt>
+        <dd><a href="application.html#call" target="_self">전화</a></dd>
+        <dd><a href="application.html#facetoface" target="_self">방문</a></dd>
+        <dd><a href="application.html#web" target="_self">인터넷</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="ticket.html" target="_self">입장권 할인</a></dt>
+        <dd><a href="ticket.html#disney" target="_self">전시회</a></dd>
+        <dd><a href="ticket.html#incheon" target="_self">콘서트</a></dd>
+        <dd><a href="ticket.html#보도지침" target="_self">연극</a></dd>
+        <dd><a href="ticket.html#라면에파송송" target="_self">뮤지컬</a></dd>
+    </nav>
+    <!--all_menu-->
+  </div>
+  <!--wrap end-->
+
+  <nav style=" text-align: center;">
+
+    <h2><a href="night.html" style="font-size:20px;">빌딩 숲속</a></h2><br>
+    <br>
+    출발 및 도착 : 5시 잠실역 / 11시 <br><br>
+    <div id="parent">
+      <ul class="mylist" onclick="closee()"   style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <li onclick="open1()">롯데월드타워</li> ⇒
+        <li onclick="open2()">N서울타워</li> ⇒
+        <li onclick="open3()">63빌딩</li> ⇒
+        <li onclick="open4()">밤도깨비야시장</li>
+
+        <br>
+        <div id="이미지"><br>
+          <img src="밤도깨비.jpg" alt="" width="500px"></img>
+        </div>
+      </ul>
+    </div>
+    <br><br><br>
+
+  </nav>
+
+  <div id="롯데월드타워" style="text-align: center; display:none;">
+
+    <p style="font-size:20px">롯데월드타워</p><br>
+    <img src="lotteworldtower.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      서울특별시 송파구 신천동에 위치한 초고층 빌딩.<br>
+      지상 123층에 높이가 554.5 m로, 2019년 5월 기준으로 대한민국 최고층 건물이자 <br>
+      OECD 국가의 빌딩중에서 최고층 빌딩이며,<br>
+      세계에서는 부르즈 할리파(828 m), 상하이 타워(632 m), 알베이트 타워(601 m), <br>
+      핑안 파이낸스 센터(599.1 m) 다음으로 5번째로 높은 건물이다. <br>
+    </p><br><br>
+
+  </div>
+
+  <div id="N서울타워" style="text-align: center; display:none;">
+    <p style="font-size:20px">N서울타워</p><br>
+    <img src="nseoul.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      서울특별시 남산에 있는 송신탑이자 서울의 대표적인 랜드마크. <br>
+      정식 명칭은 남산서울타워로, 전망대 및 복합문화공간 이름인 N서울타워로 많이 불린다. <br><br>
+
+      타워 자체의 높이는 236.7m로, <br>
+      에펠탑이나 도쿄 타워 등 다른 랜드마크에 비하면 낮은 높이지만 <br>
+      남산의 해발고도까지 합하면 479.7m가 된다. <br>
+    </p><br><br>
+  </div>
+
+  <div id="63빌딩" style="text-align: center; display:none;">
+    <p style="font-size:20px">63빌딩</p><br>
+    <img src="63building.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      서울특별시 영등포구 63로 50(舊 여의도동 60번지)에 위치한 지상 63층짜리 빌딩. <br>
+      높이는 249.6 m로 1983년 11월 5일 상량식을 마침으로서 <br>
+      이때부터 1986년까지 약 3년간 북미를 제외한 전세계에서 제일 높은 빌딩이었지만,<br>
+      이후 아시아 곳곳에 초고층빌딩이 들어서면서 지금은 인지도가 많이 낮아졌다. <br>
+      국내 기준으론 2003년 기록이 깨졌다. <br>
+
+    </p><br><br>
+  </div>
+
+  <div id="야시장" style="text-align: center; display:none;">
+    <p style="font-size:20px">야시장</p><br>
+    <img src="야시장.jpg" alt="" width="500px"><br><br>
+    <p style="font-size:12px">
+      서울특별시에서 주최하는 시즌제 야시장으로, 야간에 활동하기 좋은 4월부터 10월까지만 열린다. <br>
+      주로 주말에 열린다. <span style="background:yellow">여의도</span>, 반포, DDP는 금요일/토요일, 청계천은 토요일/일요일에 열린다.<br>
+      우천시 취소된다.<Br><br><br>
+    </p>
+  </div>
+
+
+  <footer class="footer">
+    <center><br>
+      ⓒ XXXXXXXX Tel. 02 - 1234 - 5678<br>
+      서울특별시 서초구 서초동 강남대로 429 9층 SFtour<br><br>
+    </center>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+  <meta name = "author" content = "김유진">
+  <title>SF투어</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src = "script2.js"></script>
+  <script src = "script.js"></script>
+
+  <style media="screen">
+    .footer{background-color: #d4d4d4; color: white; text-align: center;}
+  </style>
+
+  <script>
+    function allert(){
+      alert("신청이 완료되었습니다.");
+    }
+  </script>
+
+  <base href="C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 웹프\1학기 프로젝트\" target="_self">
+</head>
+<body>
+    <!--로고부분-->
+    <header style=" text-align: center;">
+      <a href="main.html" target="_self">
+        <img src="sf.png" width="100px"
+      alt="로고"></a><br><br>
+    </header>    <!--menu-->
+    <!--menu-->
+    <div id="wrap">
+        <div>
+          <a class="open_bt">
+          <img src="menu.png" alt=""width="50px"></a>
+        </div>
+        <nav class="all_menu">
+          <dl>
+            <dt>테마 여행</dt>
+            <dd><a href="hanok.html" target="_self">쉼표 투어</a></dd>
+            <dd><a href="night.html" target="_self">밤도깨비 투어</a></dd>
+          </dl>
+          <dl>
+            <dt><a href ="application.html" target="_self">신청 및 예매</a></dt>
+            <dd><a href="application.html#call"target="_self">전화</a></dd>
+            <dd><a href="application.html#facetoface"target="_self">방문</a></dd>
+            <dd><a href="application.html#web"target="_self">인터넷</a></dd>
+          </dl>
+          <dl>
+           <dt><a href = "ticket.html" target="_self">입장권 할인</a></dt>
+           <dd><a href="ticket.html#disney"target="_self">전시회</a></dd>
+           <dd><a href="ticket.html#incheon"target="_self">콘서트</a></dd>
+           <dd><a href="ticket.html#보도지침"target="_self">연극</a></dd>
+           <dd><a href="ticket.html#라면에파송송"target="_self">뮤지컬</a></dd>
+          </nav><!--all_menu-->
+    </div><!--wrap end-->
+
+
+    <div id="call" style=" text-align: center;" onload="document.getElementById('')">
+
+
+        <h2>전화 신청 및 예매</h2><br>
+        <span style="color:red">TEL. 02) 1234- 5678</span>
+        <br><br>
+        <h3>전화 예약</h3><br>
+        고객센터 운영 시간이 아닌 경우, 예약 남겨주세요. <br>
+        영업시간 : 평일 (공휴일 제외) 9시 ~ 18시 (점심시간 12시 ~ 1시)<br><br>
+
+        날짜 : <input type="date" id="date" value="2019-06-10"><br>
+        <form> 시간 :
+          <select id="hour" name="hour">
+            <option value="1">9시</option>
+            <option value="2">10시</option>
+            <option value="3">11시</option>
+            <option value="4">1시</option>
+            <option value="5">2시</option>
+            <option value="6">3시</option>
+            <option value="7">4시</option>
+            <option value="8">5시</option>
+          </select>
+
+          <select id="time" name="time">
+            <option value="1">00분</option>
+            <option value="2">10분</option>
+            <option value="3">20분</option>
+            <option value="4">30분</option>
+            <option value="5">40분</option>
+            <option value="6">50분</option>
+          </select>
+
+          <button type="submit" name="button" id="button" > 선택 </button>
+        </form>
+        <br><br>
+
+        <script type="text/javascript">
+          var button=document.getElementById("button");
+          button.addEventListener("click", oss, true);
+
+          function oss(){
+
+
+          var result = confirm("입력한 정보가 맞습니까?");
+
+          if(result){
+            alert("신청이 완료 되었습니다.");
+          }
+
+
+        }
+        </script>
+
+    </div>
+
+    <hr><br>
+
+    <div id="facetoface" style=" text-align: center;">
+
+
+        <h2>방문 신청 및 예매</h2><br>
+        서울본사 주소<br><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.303211892349!2d127.02359651526788!3d37.500766179810356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca158e3eb7817%3A0x9477be46958f3844!2z7Lm07Lm07Jik7ZSE66CM7KaIIOqwleuCqO2UjOuemOq3uOyLreyKpO2GoOyWtA!5e0!3m2!1sko!2skr!4v1559375504263!5m2!1sko!2skr"
+       width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+       <br><br><h4>서울특별시 서초구 서초동 강남대로 429 9층 SF tour</h4><br><hr>
+
+
+
+    </div>
+
+
+    <div id="web" style=" text-align: center;">
+      <br>
+        <h2>인터넷 신청 및 안내</h2><br>
+        <br>입력하신 이메일로 예약 내역 및 결제 페이지가 전송됩니다.<br>
+        문의사항은 02) 1234-5678으로 문의 부탁드립니다.<br><br>
+        전화번호 : <input type="tel" placeholder="010-1234-5678"><br><br>
+        인원 : <input type="text" name="" value="">명<br><br>
+        날짜 : <input type="date" name="" value="2019-06-01"><br><br>
+        대표자 이름 : <input type="text" name="" value=""><br><br>
+        이메일 : <input type="email" placeholder="example@co.kr">
+        <button type="submit" name="button" onclick="oss()"> 선택 </button><br><br><br><br>
+
+    </div>
+
+
+
+    <footer class="footer"><br>
+      ⓒ XXXXXXXX Tel. 02 - 1234 - 5678<br>
+      서울특별시 서초구 서초동 강남대로 429 9층 SFtour<br>
+      <br>
+    </footer>
+
+  </body>
+</html>

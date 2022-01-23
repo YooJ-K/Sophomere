@@ -1,0 +1,4 @@
+﻿  소스.cpp
+c:\users\chris\onedrive\바탕 화면\2019학년도 2학년\2학기 api\win32project1\win32project1\소스.cpp(80): warning C4101: 'str' :참조되지 않은 지역 변수입니다.
+  Win32Project1.vcxproj -> C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\2학기 API\Win32Project1\Debug\Win32Project1.exe
+  Win32Project1.vcxproj -> C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\2학기 API\Win32Project1\Debug\Win32Project1.pdb (Full PDB)

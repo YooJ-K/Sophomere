@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="author" content="김유진">
+  <title>SF투어</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="script2.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+  const all = ele => document.querySelectorAll(ele)
+  const one = ele => document.querySelector(ele)
+  const slide = _ => {
+    const wrap = one('.slide')
+    const target = wrap.children[0]
+    const len = target.children.length
+    target.style.cssText = `width:calc(100% * ${len});display:flex;transition:1s;`
+    Array.from(target.children)
+      .forEach(ele => ele.style.cssText = `width:calc(100% / ${len});`)
+
+    let pos = 0
+    setInterval(() => {
+      pos = (pos + 1) % len
+      target.style.marginLeft = `${-pos * 100}%`
+    }, 3000) 
+  }
+  window.onload = function() {
+    slide()
+  }
+
+  </script>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .slide {
+      height: 50px;
+      width: 200px;
+      overflow: hidden;
+      text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .slide ul {
+      height: 100%;
+    }
+
+    .slide li {
+      height: 100%;
+    }
+
+    .slide li:nth-child(1) {
+      background: #faa;
+    }
+
+    .slide li:nth-child(2) {
+      background: #afa;
+    }
+
+    .slide li:nth-child(3) {
+      background: #aaf;
+    }
+
+
+    .footer {
+      background-color: #d4d4d4;
+      color: white;
+      text-align: center;
+    }
+  </style>
+
+  <base href="C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 웹프\1학기 프로젝트\" target="_self">
+</head>
+
+<body>
+  <!--로고부분-->
+  <header style=" text-align: center;">
+    <a href="main.html" target="_self">
+      <img src="sf.png" width="100px" alt="로고"></a><br><br>
+  </header>
+  <!--menu-->
+
+  <div id="wrap">
+    <div>
+      <a class="open_bt">
+        <img src="menu.png" alt="" width="50px"></a>
+    </div>
+    <nav class="all_menu">
+      <dl>
+        <dt>테마 여행</dt>
+        <dd><a href="hanok.html" target="_self">쉼표 투어</a></dd>
+        <dd><a href="night.html " target="_self">밤도깨비 투어</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="application.html" target="_self">신청 및 예매</a></dt>
+        <dd><a href="application.html#call" target="_self">전화</a></dd>
+        <dd><a href="application.html#facetoface" target="_self">방문</a></dd>
+        <dd><a href="application.html#web" target="_self">인터넷</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="ticket.html" target="_self">입장권 할인</a></dt>
+        <dd><a href="ticket.html#disney" target="_self">전시회</a></dd>
+        <dd><a href="ticket.html#incheon" target="_self">콘서트</a></dd>
+        <dd><a href="ticket.html#보도지침" target="_self">연극</a></dd>
+        <dd><a href="ticket.html#라면에파송송" target="_self">뮤지컬</a></dd>
+    </nav>
+    <!--all_menu-->
+  </div>
+  <!--wrap end-->
+
+  <!--I SEOUL U-->
+  <section>
+    <!--서울 명소-->
+    <header style=" text-align: center;">
+
+      <img src="iseoulu.png" width="80px" alt="I SEOUL U"><br><br>
+
+      <div class="slide">
+        <ul>
+          <li><img src="어린이.jpg" width="200px" height="50px" alt=""></li>
+          <li><img src="우수고객.jpg" width="200px" height="50px" alt=""></li>
+          <li><img src="노약자.jpg" width="200px" height="50px" alt=""></li>
+        </ul>
+      </div>
+
+      <!--세빛둥둥섬, 63빌딩, 롯데월드타워, N서울타워-->
+      <table style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <thead>
+          <tr>
+            <td><img src="hangang.jpg" height="200px" alt=""></td>
+            <td><img src="63building.jpg" height="200px" alt=""></td>
+            <td><img src="lotteworldtower.jpg" height="200px" alt=""></td>
+            <td><img src="nseoul.jpg" height="200px" alt=""></td>
+          </tr>
+        </thead>
+
+        <script type="text/javascript">
+
+        </script>
+        <tbody>
+          <tr>
+            <h2>
+              <th scope="cols">세빛둥둥섬</td>
+              <th scope="cols">63빌딩</td>
+              <th scope="cols">롯데월드타워</td>
+              <th scope="cols">N서울타워</td>
+            </h2>
+          </tr>
+        </tbody>
+      </table>
+      <!--광화문, 한강, 경복궁-->
+      <table style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <thead>
+          <tr>
+            <td><img src="gwanghwamun.jpg" height="200px" alt=""></td>
+            <td><img src="hangang2.jpg" height="200px" alt=""></td>
+            <td><img src="경복궁.jpg" height="200px" alt=""></td>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <h2>
+              <th scope="cols">광화문</th>
+              <th scope="cols">한강</th>
+              <th scope="cols">경복궁</th>
+
+          </tr>
+        </tbody>
+      </table>
+
+      <br><br><br>
+    </header>
+    <!--입장권 할인- 전시회, 콘서트, 연뮤-->
+    <article style=" text-align: center;">
+
+      <h2>입장권 할인</h2><br>
+      <!--전시회, 콘서트-->
+      <table style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <thead>
+          <tr>
+            <td><a href="ticket.html#disney"><img src="disney.jpg" height="200px" alt="" width="142px"></a></td>
+            <td><a href="ticket.html#shin" target="_self"><img src="짱구.jpg" height="200px" alt="" width="142px"></a></td>
+            <td><a href="ticket.html#incheon" target="_self"><img src="인천.gif" width="142px" height="200px" alt=""></a></td>
+            <td><a href="ticket.html#박효신" target="_self"><img src="박효신.jpg" height="200px" alt="" width="142px"></a></td>
+            <td><a href="ticket.html#park" target="_self"><img src="파크.jpg" height="200px" alt="" width="142px"></a></td>
+
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <h2>
+              <th scope="cols"><a href="ticket.html#disney" target="_self">[전시]디즈니<br>애니매이션 특별전<br>2019.04.19~2019.08.08<br>DDP 디자인전시관</a></th>
+              <th scope="cols"><a href="ticket.html#shin" target="_self">[전시]짱구페스티벌<br>2019.05.04~2019.09.01<br>팝콘D스퀘어 대원뮤지엄</a></th>
+              <th scope="cols"><a href="ticket.html#incheon" target="_self">[콘서트]인천펜타포트<br>락페스티벌<br>2019.08.09~2019.08.11<br>송도 달빛축제공원</a></th>
+              <th scope="cols"><a href="ticket.html#박효신" target="_self">[콘서트]박효신 LIVE<br>2019.06.29~2019.07.13<br>올림픽공원 체조경기장</a></th>
+              <th scope="cols"><a href="ticket.html#park" target="_self">[콘서트]파크뮤직페스티벌<br>2019.06.15~2019.06.16<br>올림픽공원 일대</a></th>
+
+          </tr>
+
+        </tbody>
+      </table>
+      <!--연극/뮤지컬-->
+      <table style=" text-align: center; margin-left: auto; margin-right: auto;">
+
+        <thead>
+          <tr>
+            <td><a href="ticket.html#보도지침" target="_self"><img src="보도지침.jpg" width="142px" height="200px" alt=""></a></td>
+            <td><a href="ticket.html#늘근도둑" target="_self"><img src="늘근도둑이야기.jpg" width="142px" height="200px" alt=""></a></td>
+            <td><a href="ticket.html#라면에파송송" target="_self"><img src="라면에파송송.jpg" width="142px" height="200px" alt=""></a></td>
+            <td><a href="ticket.html#록키" target="_self"><img src="rocky.gif" width="142px" height="200px" alt=""></a></td>
+            <td><a href="ticket.html#난타" target="_self"><img src="난타.jpg" height="200px" alt="" width="142px"></a></td>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <h2>
+              <th scope="cols"><a href="ticket.html#보도지침" target="_self">[연극]보도지침<br>2019.04.26~2019.07.07<br>대학로 TOM 2관</a></th>
+              <th scope="cols"><a href="ticket.html#늘근도둑" target="_self">[연극]늘근도둑이야기<br>2017.11.10~2019.06.30<br>대학로 유니플렉스 3관</a></th>
+              <th scope="cols"><a href="ticket.html#라면에파송송" target="_self">[뮤지컬]라면에 파송송<br>2019.05.01~2019.06.30<br>대학로 한성아트홀</a></th>
+              <th scope="cols"><a href="ticket.html#록키" target="_self">[뮤지컬]록키호러쇼<br>2019.05.17 ~ 2019.07.28<br>홍익대 대학로 아트센터 대극장</a></th>
+              <th scope="cols"><a href="ticket.html#난타" target="_self">[뮤지컬]난타 - 홍대, 명동<br>2019.01.01~<br>홍대/명동 난타극장</a></th>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+    </article>
+    <br><br><br>
+    <footer class="footer">
+      <br>
+      ⓒ XXXXXXXX Tel. 02 - 1234 - 5678<br>
+      서울특별시 서초구 서초동 강남대로 429 9층 SFtour<br><br><br>
+
+    </footer>
+
+  </section>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

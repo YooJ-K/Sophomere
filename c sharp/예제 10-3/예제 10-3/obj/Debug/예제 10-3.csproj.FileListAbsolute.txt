@@ -1,0 +1,9 @@
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\bin\Debug\예제 10-3.exe.config
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\bin\Debug\예제 10-3.exe
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\bin\Debug\예제 10-3.pdb
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\obj\Debug\예제_10_3.Form1.resources
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\obj\Debug\예제_10_3.Properties.Resources.resources
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\obj\Debug\예제 10-3.csproj.GenerateResource.cache
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\obj\Debug\예제 10-3.csproj.CoreCompileInputs.cache
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\obj\Debug\예제 10-3.exe
+C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 비주얼프로그래밍1\예제 10-3\예제 10-3\obj\Debug\예제 10-3.pdb

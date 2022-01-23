@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="author" content="김유진">
+  <title>SF투어</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="script2.js"></script>
+  <script src="script.js"></script>
+  <style media="screen">
+    .footer {
+      background-color: #d4d4d4;
+      color: white;
+      text-align: center;
+    }
+
+
+    ul.mylist {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+      max-width: 900px;
+      width: 100%;
+    }
+
+    ul.mylist li {
+      display: inline-block;
+      padding: 10px;
+      margin-bottom: 5px;
+      border: 1px solid #efefef;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    ul.mylist li:hover {
+      background-color: #d4d4d4;
+      color: white;
+    }
+  </style>
+
+
+  <base href="C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\1학기 웹프\1학기 프로젝트\" target="_self">
+</head>
+
+<body>
+  <!--로고부분-->
+  <header id="hed" style=" text-align: center;">
+      <a href="main.html" target="_self" style="text-align:center">
+        <img src="sf.png" width="100px" alt="로고"></a>
+    <br>
+    <br>
+  </header>
+
+  <div id="wrap">
+    <div>
+      <a class="open_bt">
+        <img src="menu.png" alt="" width="50px"></a>
+    </div>
+    <nav class="all_menu">
+      <dl>
+        <dt>테마 여행</dt>
+        <dd><a href="hanok.html" target="_self">쉼표 투어</a></dd>
+        <dd><a href="night.html" target="_self">밤도깨비 투어</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="application.html" target="_self">신청 및 예매</a></dt>
+        <dd><a href="application.html#call" target="_self">전화</a></dd>
+        <dd><a href="application.html#facetoface" target="_self">방문</a></dd>
+        <dd><a href="application.html#web" target="_self">인터넷</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="ticket.html" target="_self">입장권 할인</a></dt>
+        <dd><a href="ticket.html#disney" target="_self">전시회</a></dd>
+        <dd><a href="ticket.html#incheon" target="_self">콘서트</a></dd>
+        <dd><a href="ticket.html#보도지침" target="_self">연극</a></dd>
+        <dd><a href="ticket.html#라면에파송송" target="_self">뮤지컬</a></dd>
+    </nav>
+    <!--all_menu-->
+  </div>
+  <!--wrap end-->
+
+
+  <nav style=" text-align: center; margin-left: auto; margin-right: auto;">
+
+
+
+      <br><br>
+      <h2>본 페이지에 표시된 가격들은 장당 가격이며<br>
+        전화/방문을 통한 예매만 가능합니다.<br>
+        제휴사의 사정에 따라 수시로 가격이 변동될 수 있습니다.</h2>
+      <br>
+      <a href="application.html#call" target="_self" style="background:red; color:white;">
+        전화 예매 안내</a>
+      /
+
+      <a href="application.html#facetoface" target="_self" style="background:red; color:white;">
+        방문 예매 안내</a>
+
+
+
+      <br><br>
+
+      <ul class="mylist" style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <li><a href="ticket.html#disney" target="_self">전시회</a></li>
+        <li><a href="ticket.html#incheon" target="_self">콘서트</a></li>
+        <li><a href="ticket.html#보도지침" target="_self">연극</a></li>
+        <li><a href="ticket.html#라면에파송송" target="_self">뮤지컬</a></li>
+      </ul>
+
+      <br><br>
+
+      <table style=" text-align: center; margin-left: auto; margin-right: auto;">
+        <!--전시회 : 디즈니, 짱구-->
+        <div id="show"  style="text-align: center; display:none;">
+          <!--디즈니-->
+          <thead id="disney">
+            <tr>
+              <th>[전시]디즈니 애니메이션 특별전</th>
+              <th>2019.04.19~2019.08.08
+                DDP 디자인전시관</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><img src="disney.jpg" width="200px" alt=""><br><br></th>
+              <td>
+                <del>성인 15,000원 청소년 11,000 어린이 9,000</del> <br>
+                  -><b style="background:yellow"> SF투어가 : 성인 11,000원 청소년 10,500 어린이 8,500<b /><br>
+                    (예매 수수료는 장당 1,000원으로 별도입니다.)<br>
+
+              </td>
+            </tr>
+          </tbody>
+
+
+
+          <!--짱구-->
+          <thead id="shin">
+            <tr>
+              <th>[전시]짱구페스티벌
+              </th>
+              <th>2019.05.04~2019.09.01
+                팝콘D스퀘어 대원뮤지엄</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="짱구.jpg" alt="" width="200px"><br><br></td>
+              <td>
+                <del>성인 13,000원 청소년/어린이 9,000원</del><br>
+                  -> <b style="background:yellow">SF투어가 성인 10,000원 청소년/어린이 9,000원<br>
+                    (예매 수수료는 장당 1,000원으로 별도입니다.)</b><br>
+
+              </td>
+            </tr>
+          </tbody>
+
+        </div>
+        <!--콘서트-->
+        <div class="concert"  style="text-align: center; display:none;">
+
+          <!--인천펜타포트락페-->
+          <thead id="incheon">
+            <tr>
+              <th>[콘서트]인천펜타포트락페스티벌</th>
+              <th>2019.08.09~2019.08.11
+                송도 달빛축제공원</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="인천.gif" width="200px"><br><br></td>
+              <td>
+                <del>3일권 : 200,000원</del>
+                  <br><b style="background:yellow">sf투어가 : <b>140,000원</b>
+                    <br>(예매 수수료는 장당 1,000원으로 별도입니다.)</b>
+                  <br>준비된 수량 마감시, 빨리 종료될 수 있습니다.
+                  <br><b>동일한 1인이 3일 관람 가능</b>
+              </td>
+
+            </tr>
+          </tbody>
+          <thead id="박효신">
+            <tr>
+              <th>[콘서트]박효신 LIVE 2019</th>
+              <th>2019.06.29~2019.07.13 올림픽공원 체조경기장</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="박효신.jpg" alt="박효신" width="200px"><br><br>
+              </td>
+              <td>
+                <h1 style="color : red">
+                  마감
+                </h1>
+              </td>
+            </tr>
+          </tbody>
+
+          <thead id="park">
+            <tr>
+              <th>[콘서트]파크뮤직페스티벌</th>
+              <th>2019.06.15~2019.06.16 올림픽공원 일대</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="파크.jpg" width="200px" alt=""><br><br>
+              </td>
+              <td>
+                <b style="background : yellow">SF투어가 양일권 89,000원
+                    <br>(예매 수수료는 장당 1,000원으로 별도입니다.)</b>
+              </td>
+            </tr>
+          </tbody>
+
+        </div>
+        <!--연뮤-->
+        <div class="yeon"  style="text-align: center; display:none;">
+          <thead id="보도지침">
+            <tr>
+              <th>[연극]보도지침</th>
+              <th>2019.04.26~2019.07.07대학로 TOM 2관</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="보도지침.jpg" width="200px" alt=""><br><br>
+              </td>
+              <td>
+
+                  <del>50,000원</del><br>
+                  <b style="background : yellow">SF투어가 30,000원
+                    <br>(예매 수수료는 장당 1,000원으로 별도입니다.)</b>
+
+              </td>
+            </tr>
+          </tbody>
+
+
+          <thead id="늘근도둑">
+            <tr>
+              <th>
+                [연극]늘근도둑이야기
+              </th>
+              <th>
+                2017.11.10~2019.06.30
+                대학로 유니플렉스 3관</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="늘근도둑이야기.jpg" width="200px" alt=""><br><br>
+              </td>
+              <td>
+                <del>35,000원</del><br><b style="background : yellow">
+                    SF투어가 25,000원<br>(예매 수수료는 장당 1,000원으로 별도입니다.)
+                  </b>
+              </td>
+            </tr>
+          </tbody>
+
+
+        </div>
+
+        <div class="musical" style="text-align: center; display:none;">
+
+          <thead id="라면에파송송">
+            <tr>
+              <th>
+                [뮤지컬]라면에 파송송</th>
+              <th>2019.05.01~2019.06.30 대학로 한성아트홀</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="라면에파송송.jpg" width="200px" alt=""><br><br>
+              </td>
+              <td>
+                <del>40,000원</del><br><b style="background : yellow">
+                    SF투어가 35,000원<br>(예매 수수료는 장당 1,000원으로 별도입니다.)
+
+                  </b>
+
+              </td>
+            </tr>
+          </tbody>
+
+          <thead id="록키">
+            <tr>
+              <th>
+                [뮤지컬]록키호러쇼</th>
+              <th>2019.05.17~2019.07.28홍대 아트센터 대극장</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="rocky.gif" width="200px" alt=""><br><br>
+              </td>
+              <td>
+              <del>VIP석 99,000원</del><br><b style="background : yellow">SF투어가 88,000원<br>(예매 수수료는 장당 1,000원으로 별도입니다.)</b>
+              </td>
+            </tr>
+          </tbody>
+
+          <thead id="난타">
+            <tr>
+              <th>
+                [뮤지컬]난타 - 홍대, 명동</th>
+              <th>2019.01.01~ 홍대/명동 난타극장</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src="난타.jpg" width="200px" alt=""><br><br>
+              </td>
+              <td>
+
+                  <del>VIP석 60,000원</del><br>
+                  <b style="background : yellow">SF투어가 50,000원<br>
+                    (예매 수수료는 장당 1,000원으로 별도입니다.)</b>
+
+              </td>
+            </tr>
+          </tbody>
+        </div>
+      </table>
+
+
+      <a href="ticket.html#hed" target="_self">
+        <img src="top.png" width="30px" alt="">
+      </a>
+
+
+
+
+  </nav>
+  <footer class="footer"><br>
+      ⓒ XXXXXXXX Tel. 02 - 1234 - 5678<br>
+      서울특별시 서초구 서초동 강남대로 429 9층 SFtour<br><br>
+
+  </footer>
+
+
+
+</body>
+
+</html>

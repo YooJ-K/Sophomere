@@ -1,0 +1,8 @@
+﻿  소스.cpp
+c:\users\chris\onedrive\바탕 화면\2019학년도 2학년\2학기 api\1128\1128\소스.cpp(72): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\chris\onedrive\바탕 화면\2019학년도 2학년\2학기 api\1128\1128\소스.cpp(77): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\chris\onedrive\바탕 화면\2019학년도 2학년\2학기 api\1128\1128\소스.cpp(82): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\chris\onedrive\바탕 화면\2019학년도 2학년\2학기 api\1128\1128\소스.cpp(87): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\chris\onedrive\바탕 화면\2019학년도 2학년\2학기 api\1128\1128\소스.cpp(59): warning C4101: 'c' :참조되지 않은 지역 변수입니다.
+  1128.vcxproj -> C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\2학기 API\1128\Debug\1128.exe
+  1128.vcxproj -> C:\Users\chris\OneDrive\바탕 화면\2019학년도 2학년\2학기 API\1128\Debug\1128.pdb (Full PDB)
